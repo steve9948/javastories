@@ -1,0 +1,5 @@
+content:
+  - Hierarchy of exceptions
+  - UncheckedException
+  - Base class
+  - BadRequestException

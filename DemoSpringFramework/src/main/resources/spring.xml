@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean id="dev" class="com.steve.Dev" autowire="byType">
+
+<!--        <property name="comp" ref="comp"/>-->
+
+
+        <!-- Constructor injection -->
+<!--        <constructor-arg ref="lap1"/>-->
+
+<!--        <property name="laptop" ref="lap1"/>  Setter injection-->
+<!--        <property name="age" value="18"/>  Not recommended because we are setting the age-->
+<!--        <constructor-arg value="16" />-->
+    </bean>
+
+    <bean id="lap1" class="com.steve.Laptop" primary="true"> </bean>
+    <bean id="desk1" class="com.steve.Desktop"> </bean>
+
+</beans>

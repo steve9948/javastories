@@ -1,0 +1,22 @@
+hyperskill_project:
+  id: 113
+  ide_files: https://hyperskill.org/api/projects/113/additional-files/additional_files.json
+  is_template_based: true
+  use_ide: true
+update_date: "Mon, 13 Apr 2026 16:04:57 UTC"
+stages:
+  - id: 614
+    step: 9925
+    is_completed: false
+  - id: 615
+    step: 9926
+    is_completed: false
+  - id: 616
+    step: 9927
+    is_completed: false
+  - id: 617
+    step: 9928
+    is_completed: false
+  - id: 618
+    step: 9929
+    is_completed: false
