@@ -1,7 +1,8 @@
 package com.example.creatorstore.entities;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -18,12 +19,13 @@ import java.math.BigDecimal;
 public class OrderItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @Column(nullable = false)
-    @NotBlank(message = "Order Id is required")
+    @NotNull(message = "Order Id is required")
     private Integer orderId;
     @Column(name = "price_at-purchase", nullable = false)
     private BigDecimal priceAtPurchase;
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "order-id",  nullable = false)
     private Order order;
