@@ -41,7 +41,6 @@ public class Order {
     public void prePersist() {
         this.createdAt = LocalDateTime.now();
     }
-    //Todo: relations
 
 
 
